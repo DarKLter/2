@@ -1,0 +1,94 @@
+[gd_scene load_steps=19 format=3 uid="uid://02huqewp6q1a"]
+
+[ext_resource type="Script" path="res://Scripts/Treasure/small_map.gd" id="1_edgls"]
+[ext_resource type="Texture2D" uid="uid://bll7rykik7atu" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/01.png" id="2_k2b7m"]
+[ext_resource type="Texture2D" uid="uid://cq2qqxoynce7w" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/02.png" id="3_fcpar"]
+[ext_resource type="Texture2D" uid="uid://cp6axonac3acj" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/03.png" id="4_6xadw"]
+[ext_resource type="Texture2D" uid="uid://c27g803fvgp4n" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/04.png" id="5_r0xkb"]
+[ext_resource type="Texture2D" uid="uid://wla133dfm7i4" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/05.png" id="6_s0ndm"]
+[ext_resource type="Texture2D" uid="uid://bmr0e2kkr6yee" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/06.png" id="7_i1foy"]
+[ext_resource type="Texture2D" uid="uid://dhx0f5583ag2n" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/07.png" id="8_8qika"]
+[ext_resource type="Texture2D" uid="uid://dt8ky6eihn7mp" path="res://Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 1/08.png" id="9_sefgk"]
+[ext_resource type="Texture2D" uid="uid://cxe303x1cf4mj" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/In/01.png" id="10_tvomu"]
+[ext_resource type="Texture2D" uid="uid://dxyemass7qsal" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/In/02.png" id="11_mobqr"]
+[ext_resource type="Texture2D" uid="uid://brc8y801512k0" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/In/03.png" id="12_g8lap"]
+[ext_resource type="Texture2D" uid="uid://p14u4dri7a1" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/01.png" id="13_ysbwj"]
+[ext_resource type="Texture2D" uid="uid://b2eysob3vp7uj" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/02.png" id="14_s2wlj"]
+[ext_resource type="Texture2D" uid="uid://c3et7oo1acbye" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/03.png" id="15_d8wvn"]
+[ext_resource type="AudioStream" uid="uid://bud2y72bfhn1n" path="res://Resources/Sounds/447932__breviceps__paper.wav" id="16_x5ueh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ytn7x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k2b7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fcpar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6xadw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r0xkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s0ndm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i1foy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8qika")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sefgk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_tvomu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mobqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g8lap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ysbwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_s2wlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d8wvn")
+}],
+"loop": false,
+"name": &"effect",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_06y65"]
+size = Vector2(15, 15)
+
+[node name="SmallMap1" type="Area2D"]
+collision_layer = 16777216
+collision_mask = 256
+script = ExtResource("1_edgls")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ytn7x")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_06y65")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_x5ueh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,79 @@
+[gd_resource type="Theme" load_steps=15 format=3 uid="uid://bhnfkaavnn1x"]
+
+[ext_resource type="Texture2D" uid="uid://h8ffqltyghn7" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Green Button/1.png" id="1_1hiia"]
+[ext_resource type="Texture2D" uid="uid://kym45shyq5go" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Yellow Button/1.png" id="1_l8cvq"]
+[ext_resource type="Texture2D" uid="uid://gmvm0rnfqwxn" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Prefabs/9.png" id="3_jpjr8"]
+[ext_resource type="Texture2D" uid="uid://dm78gdevkomls" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Prefabs/3.png" id="3_sc2fh"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f5544"]
+load_path = "res://.godot/imported/1.png-5b7c79fcc630107b080b4909ed93a0eb.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pd0rb"]
+texture = SubResource("CompressedTexture2D_f5544")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+modulate_color = Color(0.501961, 0.501961, 0.501961, 0.501961)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i106o"]
+texture = ExtResource("1_l8cvq")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jcsf8"]
+load_path = "res://.godot/imported/1.png-790e4b8670bd58e0d304165a77a499c6.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4v0r7"]
+texture = SubResource("CompressedTexture2D_jcsf8")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s255r"]
+texture = ExtResource("1_1hiia")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_imh51"]
+load_path = "res://.godot/imported/1.png-790e4b8670bd58e0d304165a77a499c6.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jrohb"]
+texture = SubResource("CompressedTexture2D_imh51")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+modulate_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_llqrp"]
+texture = ExtResource("3_jpjr8")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8gdgq"]
+texture = ExtResource("3_sc2fh")
+texture_margin_left = 16.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_pd0rb")
+Button/styles/focus = SubResource("StyleBoxTexture_i106o")
+Button/styles/hover = SubResource("StyleBoxTexture_4v0r7")
+Button/styles/normal = SubResource("StyleBoxTexture_s255r")
+Button/styles/pressed = SubResource("StyleBoxTexture_jrohb")
+Panel/styles/panel = SubResource("StyleBoxTexture_llqrp")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_8gdgq")

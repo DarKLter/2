@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo82shgl5jjnt"]
+
+[ext_resource type="Texture2D" uid="uid://4c7xmegku2tk" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Padlock/1.png" id="2_74gkg"]
+[ext_resource type="AudioStream" uid="uid://i7iup4b2gvmk" path="res://Resources/Sounds/699530__valenspire__coin_misc_01.wav" id="14_ww5kt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6rnhn"]
+size = Vector2(10, 8)
+
+[node name="Padlock" type="RigidBody2D"]
+z_index = -1
+collision_layer = 16777216
+lock_rotation = true
+freeze_mode = 1
+max_contacts_reported = 1
+contact_monitor = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("2_74gkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -4)
+shape = SubResource("RectangleShape2D_6rnhn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_ww5kt")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,351 @@
+[gd_scene load_steps=45 format=3 uid="uid://bqesfqn04fjth"]
+
+[ext_resource type="Script" path="res://Scripts/Treasure/chest.gd" id="1_6jyep"]
+[ext_resource type="Texture2D" uid="uid://bke2ps4tokvpn" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="1_780tp"]
+[ext_resource type="PackedScene" uid="uid://s7ypgrvk8lre" path="res://Scenes/Treasure/silver_coin.tscn" id="2_jg240"]
+[ext_resource type="Texture2D" uid="uid://d0erd23ym7uak" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/8.png" id="3_cqg6u"]
+[ext_resource type="PackedScene" uid="uid://byi1whjxl6qyj" path="res://Scenes/Treasure/gold_coin.tscn" id="3_wgn2d"]
+[ext_resource type="PackedScene" uid="uid://bo82shgl5jjnt" path="res://Scenes/Treasure/padlock.tscn" id="4_en4tp"]
+[ext_resource type="Texture2D" uid="uid://bomrdw3nngqsc" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/7.png" id="4_foy1s"]
+[ext_resource type="Texture2D" uid="uid://83fvmqkr0eu" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/6.png" id="5_mugj6"]
+[ext_resource type="Texture2D" uid="uid://bhxq02n7g22j5" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/5.png" id="6_bfufr"]
+[ext_resource type="Texture2D" uid="uid://b2nefr0nib66u" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/4.png" id="7_iohv7"]
+[ext_resource type="AudioStream" uid="uid://g3g7dxsel8yu" path="res://Resources/Sounds/573649__the_frisbee_of_peace__wooden-chest-lid-latches-close_02.wav" id="8_4xg2v"]
+[ext_resource type="AudioStream" uid="uid://b67b8lmw2mjco" path="res://Resources/Sounds/573654__the_frisbee_of_peace__wooden-chest-open.wav" id="9_unu2e"]
+[ext_resource type="Texture2D" uid="uid://darvie6kpk6w" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Idle/1.png" id="12_i84dj"]
+[ext_resource type="Texture2D" uid="uid://bw5n1gk3rth0a" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/2.png" id="13_ng1n2"]
+[ext_resource type="Texture2D" uid="uid://bb8v8u704a0br" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/1.png" id="14_njhhb"]
+[ext_resource type="AudioStream" uid="uid://ba5l41ydywl4e" path="res://Resources/Sounds/418846_key-twist-in-lock.wav" id="15_2bl77"]
+
+[sub_resource type="Animation" id="Animation_jxd31"]
+resource_name = "closed"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_cqg6u"), ExtResource("4_foy1s"), ExtResource("5_mugj6"), ExtResource("6_bfufr"), ExtResource("7_iohv7")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("8_4xg2v")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_hpyiv"]
+resource_name = "closed_idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_780tp")]
+}
+
+[sub_resource type="Animation" id="Animation_otcx7"]
+resource_name = "lock"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_780tp"), ExtResource("13_ng1n2"), ExtResource("14_njhhb")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("15_2bl77")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_sivv7"]
+resource_name = "locked_idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_i84dj")]
+}
+
+[sub_resource type="Animation" id="Animation_04kwy"]
+resource_name = "open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_iohv7"), ExtResource("6_bfufr"), ExtResource("5_mugj6"), ExtResource("4_foy1s"), ExtResource("3_cqg6u")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("9_unu2e")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"plunder"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_es5d6"]
+resource_name = "open_idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_cqg6u")]
+}
+
+[sub_resource type="Animation" id="Animation_cuokm"]
+resource_name = "unlock"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_njhhb"), ExtResource("13_ng1n2"), ExtResource("1_780tp")]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("15_2bl77")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"throw_padlock"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qqbwd"]
+_data = {
+"close": SubResource("Animation_jxd31"),
+"closed_idle": SubResource("Animation_hpyiv"),
+"lock": SubResource("Animation_otcx7"),
+"locked_idle": SubResource("Animation_sivv7"),
+"open": SubResource("Animation_04kwy"),
+"open_idle": SubResource("Animation_es5d6"),
+"unlock": SubResource("Animation_cuokm")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vyaqd"]
+animation = &"close"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mimv0"]
+animation = &"closed_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2vtb5"]
+animation = &"lock"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ngtyb"]
+animation = &"locked_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0w8bt"]
+animation = &"open"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ijluf"]
+animation = &"open_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ojocg"]
+animation = &"unlock"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a6lce"]
+advance_mode = 2
+advance_expression = "_is_open"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dncly"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vhpaa"]
+advance_mode = 2
+advance_expression = "not _is_open"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_81u8i"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_or1gv"]
+advance_mode = 2
+advance_expression = "not _is_open && not _is_locked"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_125pn"]
+advance_mode = 2
+advance_expression = "_is_open"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kcf7d"]
+advance_mode = 2
+advance_expression = "_is_locked"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rtjur"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_t4cc7"]
+advance_mode = 2
+advance_expression = "not _is_locked"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_f01d4"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_74pbg"]
+advance_mode = 2
+advance_expression = "_is_locked"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_qkxlo"]
+states/close/node = SubResource("AnimationNodeAnimation_vyaqd")
+states/close/position = Vector2(635, 72)
+states/closed_idle/node = SubResource("AnimationNodeAnimation_mimv0")
+states/closed_idle/position = Vector2(516.333, 117.333)
+states/lock/node = SubResource("AnimationNodeAnimation_2vtb5")
+states/lock/position = Vector2(613, 184.333)
+states/locked_idle/node = SubResource("AnimationNodeAnimation_ngtyb")
+states/locked_idle/position = Vector2(509.888, 229.667)
+states/open/node = SubResource("AnimationNodeAnimation_0w8bt")
+states/open/position = Vector2(421.667, 58.6667)
+states/open_idle/node = SubResource("AnimationNodeAnimation_ijluf")
+states/open_idle/position = Vector2(508.333, 4)
+states/unlock/node = SubResource("AnimationNodeAnimation_ojocg")
+states/unlock/position = Vector2(373, 197.667)
+transitions = ["closed_idle", "open", SubResource("AnimationNodeStateMachineTransition_a6lce"), "open", "open_idle", SubResource("AnimationNodeStateMachineTransition_dncly"), "open_idle", "close", SubResource("AnimationNodeStateMachineTransition_vhpaa"), "close", "closed_idle", SubResource("AnimationNodeStateMachineTransition_81u8i"), "Start", "closed_idle", SubResource("AnimationNodeStateMachineTransition_or1gv"), "Start", "open_idle", SubResource("AnimationNodeStateMachineTransition_125pn"), "closed_idle", "lock", SubResource("AnimationNodeStateMachineTransition_kcf7d"), "lock", "locked_idle", SubResource("AnimationNodeStateMachineTransition_rtjur"), "locked_idle", "unlock", SubResource("AnimationNodeStateMachineTransition_t4cc7"), "unlock", "closed_idle", SubResource("AnimationNodeStateMachineTransition_f01d4"), "Start", "locked_idle", SubResource("AnimationNodeStateMachineTransition_74pbg")]
+graph_offset = Vector2(-146, -8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7trkx"]
+size = Vector2(30, 24)
+
+[node name="Chest" type="Area2D"]
+z_index = -1
+collision_layer = 16777216
+collision_mask = 257
+script = ExtResource("1_6jyep")
+_total_value = 21
+_silver_coin = ExtResource("2_jg240")
+_gold_coin = ExtResource("3_wgn2d")
+_padlock = ExtResource("4_en4tp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("1_780tp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_qqbwd")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_qqbwd")
+}
+tree_root = SubResource("AnimationNodeStateMachine_qkxlo")
+advance_expression_base_node = NodePath("../../..")
+anim_player = NodePath("..")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_7trkx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

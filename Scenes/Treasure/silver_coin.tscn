@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://s7ypgrvk8lre"]
+
+[ext_resource type="Script" path="res://Scripts/Treasure/coin.gd" id="1_pqj1c"]
+[ext_resource type="Texture2D" uid="uid://352foos5i3em" path="res://Treasure Hunters/Pirate Treasure/Sprites/Silver Coin/01.png" id="1_yfqhh"]
+[ext_resource type="Texture2D" uid="uid://045vjdhfku1g" path="res://Treasure Hunters/Pirate Treasure/Sprites/Silver Coin/02.png" id="2_gx58t"]
+[ext_resource type="Texture2D" uid="uid://cyp72hf1vihxv" path="res://Treasure Hunters/Pirate Treasure/Sprites/Silver Coin/03.png" id="3_dvttx"]
+[ext_resource type="Texture2D" uid="uid://fscnve6dpe41" path="res://Treasure Hunters/Pirate Treasure/Sprites/Silver Coin/04.png" id="4_17y1n"]
+[ext_resource type="Texture2D" uid="uid://bajcvexo4x4xw" path="res://Treasure Hunters/Pirate Treasure/Sprites/Coin Effect/01.png" id="5_pwakm"]
+[ext_resource type="Texture2D" uid="uid://d0sdctwq7bxe6" path="res://Treasure Hunters/Pirate Treasure/Sprites/Coin Effect/02.png" id="6_d0tsu"]
+[ext_resource type="Texture2D" uid="uid://1vln67t6ywn2" path="res://Treasure Hunters/Pirate Treasure/Sprites/Coin Effect/03.png" id="7_5xi1t"]
+[ext_resource type="AudioStream" uid="uid://cg4jem1hcg4l8" path="res://Resources/Sounds/699496__valenspire__coin_drop_01.wav" id="8_vtv72"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x8wpb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yfqhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gx58t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dvttx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_17y1n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_pwakm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_d0tsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5xi1t")
+}],
+"loop": false,
+"name": &"effect",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dt843"]
+radius = 5.0
+
+[node name="SilverCoin" type="RigidBody2D"]
+collision_layer = 16777216
+collision_mask = 257
+lock_rotation = true
+freeze_mode = 1
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_pqj1c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_x8wpb")
+autoplay = "default"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_vtv72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_dt843")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
