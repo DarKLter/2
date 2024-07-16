@@ -1,6 +1,6 @@
-[gd_scene load_steps=86 format=3 uid="uid://c1rsp4atrjcd"]
+[gd_scene load_steps=88 format=3 uid="uid://c1rsp4atrjcd"]
 
-[ext_resource type="Script" path="res://Scripts/Character/character.gd" id="1_hcspg"]
+[ext_resource type="Script" path="res://Scripts/Character/enemy.gd" id="1_r7qt1"]
 [ext_resource type="PackedScene" uid="uid://yry0gs8v0o00" path="res://Scenes/Dust/jump_dust.tscn" id="2_l4jw1"]
 [ext_resource type="Texture2D" uid="uid://cjeaspjoffun7" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 01.png" id="3_m2liy"]
 [ext_resource type="Texture2D" uid="uid://ddp5od36intdr" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 02.png" id="4_px51w"]
@@ -373,6 +373,7 @@ advance_mode = 2
 advance_expression = "is_on_floor()"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c18et"]
+switch_mode = 2
 advance_mode = 2
 advance_expression = "not _is_dead"
 
@@ -390,7 +391,7 @@ states/dead_hit/position = Vector2(397.667, 164.667)
 states/hit/node = SubResource("AnimationNodeAnimation_lqpq6")
 states/hit/position = Vector2(517.667, 23.3333)
 transitions = ["Start", "Attack", SubResource("AnimationNodeStateMachineTransition_tmxaf"), "Attack", "hit", SubResource("AnimationNodeStateMachineTransition_y16iy"), "hit", "Attack", SubResource("AnimationNodeStateMachineTransition_d673e"), "Attack", "dead_hit", SubResource("AnimationNodeStateMachineTransition_dsp0h"), "dead_hit", "dead_ground", SubResource("AnimationNodeStateMachineTransition_lh8pl"), "dead_ground", "Attack", SubResource("AnimationNodeStateMachineTransition_c18et"), "dead_hit", "Attack", SubResource("AnimationNodeStateMachineTransition_fhyla")]
-graph_offset = Vector2(-65, -28)
+graph_offset = Vector2(-71, -30)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lkxbq"]
 radius = 8.0
@@ -424,23 +425,23 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3io87"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a1us1"]
+radius = 100.0
+
 [node name="Fierce Tooth" type="CharacterBody2D"]
 collision_layer = 65536
 collision_mask = 65793
-script = ExtResource("1_hcspg")
+script = ExtResource("1_r7qt1")
 _speed = 3
-_acceleration = 5.0
-_deceleration = 10.0
-_jump_height = 1.5
 _jump_dust = ExtResource("2_l4jw1")
-_is_facing_left = true
 _sprite_face_left = true
-_drag = -0.25
 _is_attacking = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
-texture = ExtResource("22_tf4aw")
+texture = ExtResource("23_xqwqx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
@@ -487,4 +488,33 @@ sprite_frames = SubResource("SpriteFrames_pdw3c")
 frame = 3
 frame_progress = 1.0
 
+[node name="Target" type="Area2D" parent="HitBox"]
+collision_layer = 1048576
+collision_mask = 512
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox/Target"]
+position = Vector2(-10, -16)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_3io87")
+debug_color = Color(0.654902, 0.517647, 0, 0.419608)
+
+[node name="Vision" type="Area2D" parent="."]
+collision_layer = 524288
+collision_mask = 256
+monitorable = false
+
+[node name="FieldOfVision" type="CollisionShape2D" parent="Vision"]
+position = Vector2(-56, -16)
+shape = SubResource("CircleShape2D_a1us1")
+debug_color = Color(0.529412, 0.537255, 0.541176, 0.419608)
+
+[node name="LineOfSight" type="RayCast2D" parent="Vision"]
+position = Vector2(0, -16)
+target_position = Vector2(-64, 0)
+collision_mask = 257
+
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="area_entered" from="HitBox/Target" to="." method="_on_target_area_entered"]
+[connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]
+[connection signal="body_exited" from="Vision" to="." method="_on_vision_body_exited"]

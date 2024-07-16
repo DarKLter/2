@@ -8,6 +8,7 @@ enum LedgeBehaviour{
 @export var _ledge_behaviour : LedgeBehaviour
 @onready var _character : Character = get_parent()
 @onready var _floor_ray : RayCast2D = $RayCast2D
+@onready var _is_patrolling : bool = true
 var _direction : float
 
 func _ready():
@@ -18,7 +19,16 @@ func _set_floor_ray_position():
 	@warning_ignore("integer_division")
 	_floor_ray.position.x = Global.ppt / 2 * _direction
 
+func pause():
+	_is_patrolling = false
+	_character.run(0)
+	
+func resume():
+	_is_patrolling = true
+
 func _process(_delta : float):
+	if not _is_patrolling:
+		return
 	if _character.is_on_wall():
 		_direction = sign(_character.get_wall_normal().x)
 		_set_floor_ray_position()

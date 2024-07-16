@@ -78,7 +78,7 @@ func attack():
 func take_damage(amount : int, direction : Vector2):
 	_current_health = max(_current_health - amount, 0)
 	health_changed.emit(float(_current_health) / _max_health)
-	velocity = direction * Global.ppt * 5
+	velocity = direction * Global.ppt * -5
 	#print("Health : " + str(_current_health))
 	if _is_attacking:
 		_attack_interrupted()
