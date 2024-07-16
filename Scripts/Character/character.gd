@@ -69,6 +69,9 @@ func _ready():
 ##################################################################
 #region Public Methods
 
+func is_facing_left() -> bool:
+	return _is_facing_left
+
 func attack():
 	_wants_to_attack = true
 
@@ -77,6 +80,8 @@ func take_damage(amount : int, direction : Vector2):
 	health_changed.emit(float(_current_health) / _max_health)
 	velocity = direction * Global.ppt * 5
 	#print("Health : " + str(_current_health))
+	if _is_attacking:
+		_attack_interrupted()
 	if _current_health == 0:
 		_die()
 	else :
@@ -170,6 +175,10 @@ func revive():
 
 #endregion
 ####################################################################
+
+func _attack_interrupted():
+	_is_attacking = false
+	_hit_box.monitoring = false
 
 func _physics_process(delta : float):
 	if not _is_facing_left && sign(_direction) == -1:

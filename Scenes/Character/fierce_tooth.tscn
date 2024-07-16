@@ -1,6 +1,7 @@
-[gd_scene load_steps=84 format=3 uid="uid://c1rsp4atrjcd"]
+[gd_scene load_steps=86 format=3 uid="uid://c1rsp4atrjcd"]
 
 [ext_resource type="Script" path="res://Scripts/Character/character.gd" id="1_hcspg"]
+[ext_resource type="PackedScene" uid="uid://yry0gs8v0o00" path="res://Scenes/Dust/jump_dust.tscn" id="2_l4jw1"]
 [ext_resource type="Texture2D" uid="uid://cjeaspjoffun7" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 01.png" id="3_m2liy"]
 [ext_resource type="Texture2D" uid="uid://ddp5od36intdr" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 02.png" id="4_px51w"]
 [ext_resource type="Texture2D" uid="uid://dqpf62h0t7lto" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 03.png" id="5_yarl5"]
@@ -113,6 +114,18 @@ tracks/2/keys = {
 "args": [&"", 1.0, false],
 "method": &"play"
 }]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..:_is_attacking")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_osd64"]
@@ -316,6 +329,10 @@ advance_mode = 2
 switch_mode = 2
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wq0e6"]
+advance_mode = 2
+advance_expression = "not wants_to_attack"
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_gxxld"]
 states/Movement/node = SubResource("AnimationNodeStateMachine_i1fv4")
 states/Movement/position = Vector2(544.333, 98.8889)
@@ -323,7 +340,7 @@ states/anticipation/node = SubResource("AnimationNodeAnimation_qf85b")
 states/anticipation/position = Vector2(455, 27.3333)
 states/attack/node = SubResource("AnimationNodeAnimation_to1k6")
 states/attack/position = Vector2(644.333, 26.8889)
-transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_rc41g"), "Movement", "anticipation", SubResource("AnimationNodeStateMachineTransition_yrbs5"), "anticipation", "attack", SubResource("AnimationNodeStateMachineTransition_em08u"), "attack", "Movement", SubResource("AnimationNodeStateMachineTransition_ikh3n")]
+transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_rc41g"), "Movement", "anticipation", SubResource("AnimationNodeStateMachineTransition_yrbs5"), "anticipation", "attack", SubResource("AnimationNodeStateMachineTransition_em08u"), "attack", "Movement", SubResource("AnimationNodeStateMachineTransition_ikh3n"), "anticipation", "Movement", SubResource("AnimationNodeStateMachineTransition_wq0e6")]
 graph_offset = Vector2(-5, -36)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_182rg"]
@@ -411,11 +428,19 @@ animations = [{
 collision_layer = 65536
 collision_mask = 65793
 script = ExtResource("1_hcspg")
+_speed = 3
+_acceleration = 5.0
+_deceleration = 10.0
+_jump_height = 1.5
+_jump_dust = ExtResource("2_l4jw1")
+_is_facing_left = true
+_sprite_face_left = true
+_drag = -0.25
 _is_attacking = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
-texture = ExtResource("20_8flbl")
+texture = ExtResource("22_tf4aw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
@@ -448,7 +473,6 @@ debug_color = Color(0, 0.635294, 0.423529, 0.419608)
 [node name="HitBox" type="Area2D" parent="."]
 collision_layer = 262144
 collision_mask = 512
-monitoring = false
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]

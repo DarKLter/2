@@ -11,12 +11,12 @@ func _init():
 	world = 1
 	level = 1
 	coins = 0
-	lives = 3
+	lives = 0
 	checkpoint = 0
 	has_key = false
 
 func retry():
 	coins = 0
-	lives = 3
+	lives = 1
 	checkpoint = 0
 	has_key = false
