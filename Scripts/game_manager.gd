@@ -10,6 +10,7 @@ extends Node2D
 @onready var _lives_counter : Control = $UserInterface/LivesCounter
 @onready var _key_icon : Control = $UserInterface/KeyIcon
 @onready var _game_over_menu : Control = $UserInterface/GameOverMenu
+@onready var _pause_menu : Control = $UserInterface/PauseMenu
 @onready var _fade : ColorRect = $UserInterface/Fade
 @onready var _fanfare : AudioStreamPlayer2D = $Fanfare
 var _level : Area2D
@@ -27,6 +28,7 @@ func _load_level():
 	add_child(_level)
 	_init_boundaries()
 	_init_ui()
+	_pause(false)
 
 func _init_boundaries():
 	#get the level boundaries from the level 
@@ -48,6 +50,14 @@ func _init_ui():
 func _spawn_player():
 	_player_character.global_position = _level.get_checkpoint_position(File.data.checkpoint)
 	_player_character.velocity = Vector2.ZERO
+
+func _input(event : InputEvent):
+	if event.is_action_pressed("pause"):
+		_pause(!get_tree().paused)
+
+func _pause(should_be_pause : bool):
+	get_tree().paused = should_be_pause
+	_pause_menu.visible = should_be_pause
 
 func collect_map():
 	_player.set_enabled(false)
@@ -101,11 +111,11 @@ func _game_over():
 	_game_over_menu.visible = true
 	#print("GAME OVER")
 
-func _on_retry_pressed():
+func _restart(game_over : bool = false):
 	_game_over_menu.visible = false
 	await _fade.fade_to_black()
 	#reset variables #unload level #reload same level
-	File.data.retry()
+	File.data.reset(game_over)
 	_level.queue_free()
 	#respawn enemies, treasure, reset checkpoints etc...
 	_load_level()

@@ -1,4 +1,4 @@
-extends Character
+class_name Enemy extends Character
 
 @onready var _vision : Area2D = $Vision
 @onready var _line_of_sight : RayCast2D = $Vision/LineOfSight
@@ -53,5 +53,5 @@ func _on_vision_body_exited(body : Node2D):
 func _on_target_area_entered(_area : Area2D):
 	attack()
 
-func take_damage(_amount : int, direction : Vector2):
-	velocity = direction * Global.ppt * 5
+func _on_timer_timeout():
+	pass # Replace with function body.

@@ -1,6 +1,6 @@
 [gd_scene load_steps=88 format=3 uid="uid://c1rsp4atrjcd"]
 
-[ext_resource type="Script" path="res://Scripts/Character/enemy.gd" id="1_r7qt1"]
+[ext_resource type="Script" path="res://Scripts/Character/Enemies/enemy.gd" id="1_r7qt1"]
 [ext_resource type="PackedScene" uid="uid://yry0gs8v0o00" path="res://Scenes/Dust/jump_dust.tscn" id="2_l4jw1"]
 [ext_resource type="Texture2D" uid="uid://cjeaspjoffun7" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 01.png" id="3_m2liy"]
 [ext_resource type="Texture2D" uid="uid://ddp5od36intdr" path="res://Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 02.png" id="4_px51w"]
@@ -223,7 +223,6 @@ tracks/1/keys = {
 [sub_resource type="Animation" id="Animation_51xgf"]
 resource_name = "idle"
 length = 0.8
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -430,18 +429,19 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_a1us1"]
 radius = 100.0
 
-[node name="Fierce Tooth" type="CharacterBody2D"]
+[node name="FierceTooth" type="CharacterBody2D"]
 collision_layer = 65536
 collision_mask = 65793
 script = ExtResource("1_r7qt1")
 _speed = 3
 _jump_dust = ExtResource("2_l4jw1")
 _sprite_face_left = true
+_invincible_duration = 1.0
 _is_attacking = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
-texture = ExtResource("23_xqwqx")
+texture = ExtResource("25_8bc5h")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
@@ -470,6 +470,9 @@ monitoring = false
 position = Vector2(1, -12)
 shape = SubResource("CapsuleShape2D_0m8nh")
 debug_color = Color(0, 0.635294, 0.423529, 0.419608)
+
+[node name="Invincible" type="Timer" parent="HurtBox"]
+one_shot = true
 
 [node name="HitBox" type="Area2D" parent="."]
 collision_layer = 262144

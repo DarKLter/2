@@ -15,8 +15,9 @@ func _init():
 	checkpoint = 0
 	has_key = false
 
-func retry():
-	coins = 0
-	lives = 1
+func reset(game_over : bool):
+	if game_over:
+		coins = 0
+		lives = 1
 	checkpoint = 0
 	has_key = false

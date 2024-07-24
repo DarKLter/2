@@ -59,6 +59,7 @@ texture_margin_right = 20.0
 texture_margin_bottom = 20.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
+region_rect = Rect2(12, 12, 104, 104)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8gdgq"]
 texture = ExtResource("3_sc2fh")

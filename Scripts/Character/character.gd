@@ -32,6 +32,7 @@ var _is_below_surface : bool
 @export_range(1, 100) var _max_health : int = 5
 @export_range(0, 5) var _invincible_duration : float = 0
 @export_range(0, 5) var _attack_damage : int = 1
+@export_range(0, 10) var _stagger : float = 5
 @export var _is_hit : bool
 @export var _is_dead : bool
 @export var _wants_to_attack : bool
@@ -78,7 +79,7 @@ func attack():
 func take_damage(amount : int, direction : Vector2):
 	_current_health = max(_current_health - amount, 0)
 	health_changed.emit(float(_current_health) / _max_health)
-	velocity = direction * Global.ppt * -5
+	velocity = direction * Global.ppt * _stagger
 	#print("Health : " + str(_current_health))
 	if _is_attacking:
 		_attack_interrupted()
@@ -246,5 +247,5 @@ func _die():
 	_direction = 0
 
 func _on_hit_box_area_entered(area : Area2D):
-	if not _is_dead || _is_attacking:
+	if not _is_dead && _is_attacking:
 		area.get_parent().take_damage(_attack_damage, (area.global_position - global_position).normalized())

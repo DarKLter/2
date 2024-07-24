@@ -1,47 +1,52 @@
-[gd_scene load_steps=54 format=3 uid="uid://ce3h61lr6if41"]
+[gd_scene load_steps=88 format=3 uid="uid://lb3165mj66es"]
 
-[ext_resource type="Script" path="res://Scripts/Character/character.gd" id="1_bjlyu"]
-[ext_resource type="Texture2D" uid="uid://cchylx62kygxu" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 01.png" id="3_ytv6x"]
-[ext_resource type="Texture2D" uid="uid://xgulai441u5p" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 02.png" id="4_wpx3g"]
-[ext_resource type="Texture2D" uid="uid://dwakxkws8aib8" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 03.png" id="5_4hhkh"]
-[ext_resource type="Texture2D" uid="uid://cqhifcsdcuikg" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 04.png" id="6_24ggm"]
-[ext_resource type="Texture2D" uid="uid://htwjbkbb6q21" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 01.png" id="7_4lo75"]
-[ext_resource type="Texture2D" uid="uid://bweo52pfvxobj" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 02.png" id="8_tvu72"]
-[ext_resource type="Texture2D" uid="uid://b4nlvlwn3rrss" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 03.png" id="9_tkbtn"]
-[ext_resource type="Texture2D" uid="uid://b8wxptkkhf450" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 04.png" id="10_rka0t"]
-[ext_resource type="Texture2D" uid="uid://c2j7vclqf777m" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/04-Fall/Fall 01.png" id="11_75i14"]
-[ext_resource type="Texture2D" uid="uid://cae0fnubc2sv7" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 01.png" id="12_wyku2"]
-[ext_resource type="Texture2D" uid="uid://bd5ahpidf2t62" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 02.png" id="13_ljpnt"]
-[ext_resource type="Texture2D" uid="uid://mj354pwc54n5" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 01.png" id="14_5w1d6"]
-[ext_resource type="Texture2D" uid="uid://bku6ubk75cx54" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 02.png" id="15_todct"]
-[ext_resource type="Texture2D" uid="uid://ccl3af8al8hjd" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 03.png" id="16_064xl"]
-[ext_resource type="Texture2D" uid="uid://b7flrjnc7gw7u" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 04.png" id="17_l64el"]
-[ext_resource type="Texture2D" uid="uid://bar3xvtmtdiky" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="18_bb7so"]
-[ext_resource type="Texture2D" uid="uid://bmiw261fl5drp" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 02.png" id="19_c871e"]
-[ext_resource type="Texture2D" uid="uid://n7qfgxncybmc" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 03.png" id="20_frpbj"]
-[ext_resource type="Texture2D" uid="uid://btx8qbklfgnmi" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 04.png" id="21_163oi"]
-[ext_resource type="Texture2D" uid="uid://cp73uyytf38pp" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 05.png" id="22_mvfyc"]
-[ext_resource type="Texture2D" uid="uid://b31opt1nxtk1f" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 06.png" id="23_a8iij"]
-[ext_resource type="Texture2D" uid="uid://b2llo18onvkv8" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 07.png" id="24_20cdu"]
-[ext_resource type="Texture2D" uid="uid://dtnlrcatmlxma" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 08.png" id="25_plks3"]
-[ext_resource type="Texture2D" uid="uid://cem57jloy80fb" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 01.png" id="26_5k6p5"]
-[ext_resource type="Texture2D" uid="uid://cgnypga2ao8c5" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 02.png" id="27_sckpg"]
-[ext_resource type="Texture2D" uid="uid://dcira401uf48x" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 03.png" id="28_r3wb5"]
-[ext_resource type="Texture2D" uid="uid://ceysf7fnsr52r" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="29_wajgg"]
-[ext_resource type="Texture2D" uid="uid://djqbhhlstydns" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="30_5od56"]
-[ext_resource type="Texture2D" uid="uid://d067fg3i2v1ml" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 03.png" id="31_yglag"]
-[ext_resource type="Texture2D" uid="uid://b71r85gujem25" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 04.png" id="32_h1h8b"]
-[ext_resource type="Texture2D" uid="uid://d0mi3fns5mnck" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 05.png" id="33_0lps4"]
-[ext_resource type="Texture2D" uid="uid://ciqmn46eqetir" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 06.png" id="34_1aglm"]
-[ext_resource type="Texture2D" uid="uid://c5mn3girtq232" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 01.png" id="35_g4v8o"]
-[ext_resource type="Texture2D" uid="uid://buqx37rsrmox4" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 02.png" id="36_jhi6m"]
-[ext_resource type="Texture2D" uid="uid://cpbo45y8p342g" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 03.png" id="37_jfauc"]
-[ext_resource type="Texture2D" uid="uid://c8o3j2fd1452y" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 01.png" id="38_4kqd5"]
-[ext_resource type="Texture2D" uid="uid://c5o2g1j65i3fg" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 02.png" id="39_oc1h8"]
-[ext_resource type="Texture2D" uid="uid://dv2tx84hsfvtj" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 03.png" id="40_tqh7b"]
-[ext_resource type="Texture2D" uid="uid://c5k8bc830rf6d" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 04.png" id="41_1dk1v"]
+[ext_resource type="Script" path="res://Scripts/Character/Enemies/enemy.gd" id="1_6pkon"]
+[ext_resource type="PackedScene" uid="uid://yry0gs8v0o00" path="res://Scenes/Dust/jump_dust.tscn" id="2_gplal"]
+[ext_resource type="Texture2D" uid="uid://c5k8bc830rf6d" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 04.png" id="3_a82wr"]
+[ext_resource type="Texture2D" uid="uid://c5mn3girtq232" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 01.png" id="4_c1xn2"]
+[ext_resource type="Texture2D" uid="uid://buqx37rsrmox4" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 02.png" id="5_u2kr4"]
+[ext_resource type="Texture2D" uid="uid://cpbo45y8p342g" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 03.png" id="6_6lf8t"]
+[ext_resource type="Texture2D" uid="uid://c8o3j2fd1452y" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 01.png" id="7_fnu7d"]
+[ext_resource type="Texture2D" uid="uid://c5o2g1j65i3fg" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 02.png" id="8_nxr8e"]
+[ext_resource type="Texture2D" uid="uid://dv2tx84hsfvtj" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/07-Attack/Attack 03.png" id="9_e2oov"]
+[ext_resource type="Texture2D" uid="uid://cchylx62kygxu" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 01.png" id="11_pfwig"]
+[ext_resource type="Texture2D" uid="uid://xgulai441u5p" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 02.png" id="12_rqsrr"]
+[ext_resource type="Texture2D" uid="uid://dwakxkws8aib8" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 03.png" id="13_sutdd"]
+[ext_resource type="Texture2D" uid="uid://cqhifcsdcuikg" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 04.png" id="14_knt4f"]
+[ext_resource type="Texture2D" uid="uid://htwjbkbb6q21" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 01.png" id="15_agktv"]
+[ext_resource type="Texture2D" uid="uid://bweo52pfvxobj" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 02.png" id="16_cjlmo"]
+[ext_resource type="Texture2D" uid="uid://b4nlvlwn3rrss" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 03.png" id="17_oor8c"]
+[ext_resource type="Texture2D" uid="uid://b8wxptkkhf450" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 04.png" id="18_iph2f"]
+[ext_resource type="Texture2D" uid="uid://c2j7vclqf777m" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/04-Fall/Fall 01.png" id="20_v3fm2"]
+[ext_resource type="Texture2D" uid="uid://cae0fnubc2sv7" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 01.png" id="21_nhcwl"]
+[ext_resource type="Texture2D" uid="uid://mj354pwc54n5" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 01.png" id="22_d41wi"]
+[ext_resource type="Texture2D" uid="uid://bd5ahpidf2t62" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 02.png" id="22_fw1rd"]
+[ext_resource type="Texture2D" uid="uid://bku6ubk75cx54" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 02.png" id="23_lef57"]
+[ext_resource type="Texture2D" uid="uid://ccl3af8al8hjd" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 03.png" id="24_ob88u"]
+[ext_resource type="Texture2D" uid="uid://b7flrjnc7gw7u" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 04.png" id="25_bv68d"]
+[ext_resource type="Texture2D" uid="uid://bar3xvtmtdiky" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="27_s8q1o"]
+[ext_resource type="Texture2D" uid="uid://bmiw261fl5drp" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 02.png" id="28_8h0hp"]
+[ext_resource type="Texture2D" uid="uid://n7qfgxncybmc" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 03.png" id="29_8pf4w"]
+[ext_resource type="Texture2D" uid="uid://btx8qbklfgnmi" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 04.png" id="30_oi4eg"]
+[ext_resource type="Texture2D" uid="uid://cp73uyytf38pp" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 05.png" id="31_y6a83"]
+[ext_resource type="Texture2D" uid="uid://b31opt1nxtk1f" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 06.png" id="32_dmg4t"]
+[ext_resource type="Texture2D" uid="uid://b2llo18onvkv8" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 07.png" id="33_08khy"]
+[ext_resource type="Texture2D" uid="uid://dtnlrcatmlxma" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 08.png" id="34_c3gg2"]
+[ext_resource type="Texture2D" uid="uid://cem57jloy80fb" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 01.png" id="35_0u4vo"]
+[ext_resource type="Texture2D" uid="uid://cgnypga2ao8c5" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 02.png" id="36_tic83"]
+[ext_resource type="Texture2D" uid="uid://dcira401uf48x" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 03.png" id="37_o0os0"]
+[ext_resource type="Texture2D" uid="uid://ceysf7fnsr52r" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="38_emthj"]
+[ext_resource type="Texture2D" uid="uid://djqbhhlstydns" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="39_3au0r"]
+[ext_resource type="Texture2D" uid="uid://d067fg3i2v1ml" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 03.png" id="40_vk47o"]
+[ext_resource type="Texture2D" uid="uid://b71r85gujem25" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 04.png" id="41_krdsm"]
+[ext_resource type="Texture2D" uid="uid://dkdwg8r2tn3b0" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/11-Attack Effect/Attack Effect 01.png" id="42_40fl8"]
+[ext_resource type="Texture2D" uid="uid://d0mi3fns5mnck" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 05.png" id="42_xjsso"]
+[ext_resource type="Texture2D" uid="uid://ciqmn46eqetir" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 06.png" id="43_kv2xc"]
+[ext_resource type="Texture2D" uid="uid://d28es6blxlt4f" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/11-Attack Effect/Attack Effect 02.png" id="43_m3sih"]
+[ext_resource type="Texture2D" uid="uid://5lxasnjavgmy" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/11-Attack Effect/Attack Effect 03.png" id="44_cqphb"]
+[ext_resource type="Texture2D" uid="uid://dtbb4hrcmda1q" path="res://Treasure Hunters/The Crusty Crew/Sprites/Pink Star/11-Attack Effect/Attack Effect 04.png" id="45_io0qy"]
 
-[sub_resource type="Animation" id="Animation_8p7b5"]
+[sub_resource type="Animation" id="Animation_o3dip"]
 resource_name = "anticipation"
 length = 0.3
 tracks/0/type = "value"
@@ -54,11 +59,23 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("35_g4v8o"), ExtResource("36_jhi6m"), ExtResource("37_jfauc")]
+"values": [ExtResource("4_c1xn2"), ExtResource("5_u2kr4"), ExtResource("6_6lf8t")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:_wants_to_attack")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_hsryj"]
-resource_name = "attxk"
+[sub_resource type="Animation" id="Animation_6l84t"]
+resource_name = "attack"
 length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -70,7 +87,45 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("38_4kqd5"), ExtResource("39_oc1h8"), ExtResource("40_tqh7b"), ExtResource("41_1dk1v")]
+"values": [ExtResource("7_fnu7d"), ExtResource("8_nxr8e"), ExtResource("9_e2oov"), ExtResource("3_a82wr")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../HitBox:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../HitBox/AnimatedSprite2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..:_is_attacking")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_osd64"]
@@ -86,7 +141,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("3_ytv6x"), ExtResource("4_wpx3g"), ExtResource("5_4hhkh"), ExtResource("6_24ggm")]
+"values": [ExtResource("11_pfwig"), ExtResource("12_rqsrr"), ExtResource("13_sutdd"), ExtResource("14_knt4f")]
 }
 
 [sub_resource type="Animation" id="Animation_2gttj"]
@@ -102,7 +157,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("7_4lo75"), ExtResource("8_tvu72"), ExtResource("9_tkbtn"), ExtResource("10_rka0t")]
+"values": [ExtResource("15_agktv"), ExtResource("16_cjlmo"), ExtResource("17_oor8c"), ExtResource("18_iph2f")]
 }
 
 [sub_resource type="Animation" id="Animation_6oabc"]
@@ -118,7 +173,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("11_75i14")]
+"values": [ExtResource("20_v3fm2")]
 }
 
 [sub_resource type="Animation" id="Animation_nwd2e"]
@@ -134,7 +189,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("12_wyku2"), ExtResource("13_ljpnt")]
+"values": [ExtResource("21_nhcwl"), ExtResource("22_fw1rd")]
 }
 
 [sub_resource type="Animation" id="Animation_pnpgv"]
@@ -150,7 +205,19 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("14_5w1d6"), ExtResource("15_todct"), ExtResource("16_064xl"), ExtResource("17_l64el")]
+"values": [ExtResource("22_d41wi"), ExtResource("23_lef57"), ExtResource("24_ob88u"), ExtResource("25_bv68d")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:_is_hit")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_51xgf"]
@@ -167,7 +234,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("18_bb7so"), ExtResource("19_c871e"), ExtResource("20_frpbj"), ExtResource("21_163oi"), ExtResource("22_mvfyc"), ExtResource("23_a8iij"), ExtResource("24_20cdu"), ExtResource("25_plks3")]
+"values": [ExtResource("27_s8q1o"), ExtResource("28_8h0hp"), ExtResource("29_8pf4w"), ExtResource("30_oi4eg"), ExtResource("31_y6a83"), ExtResource("32_dmg4t"), ExtResource("33_08khy"), ExtResource("34_c3gg2")]
 }
 
 [sub_resource type="Animation" id="Animation_7bv8j"]
@@ -183,7 +250,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("26_5k6p5"), ExtResource("27_sckpg"), ExtResource("28_r3wb5")]
+"values": [ExtResource("35_0u4vo"), ExtResource("36_tic83"), ExtResource("37_o0os0")]
 }
 
 [sub_resource type="Animation" id="Animation_leull"]
@@ -200,13 +267,13 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("29_wajgg"), ExtResource("30_5od56"), ExtResource("31_yglag"), ExtResource("32_h1h8b"), ExtResource("33_0lps4"), ExtResource("34_1aglm")]
+"values": [ExtResource("38_emthj"), ExtResource("39_3au0r"), ExtResource("40_vk47o"), ExtResource("41_krdsm"), ExtResource("42_xjsso"), ExtResource("43_kv2xc")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xsslb"]
 _data = {
-"anticipation": SubResource("Animation_8p7b5"),
-"attack": SubResource("Animation_hsryj"),
+"anticipation": SubResource("Animation_o3dip"),
+"attack": SubResource("Animation_6l84t"),
 "dead_ground": SubResource("Animation_osd64"),
 "dead_hit": SubResource("Animation_2gttj"),
 "fall": SubResource("Animation_6oabc"),
@@ -217,37 +284,240 @@ _data = {
 "run": SubResource("Animation_leull")
 }
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_bmqxe"]
-radius = 9.05539
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7x05t"]
+animation = &"idle"
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_3o223"]
-radius = 9.06
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_34wvs"]
+animation = &"run"
 
-[node name="Pink Star" type="CharacterBody2D"]
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_toixo"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gsmf1"]
+advance_mode = 2
+advance_expression = "velocity.x != 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rphtg"]
+advance_mode = 2
+advance_expression = "velocity.x == 0"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_i1fv4"]
+states/idle/node = SubResource("AnimationNodeAnimation_7x05t")
+states/idle/position = Vector2(478.667, 99.3333)
+states/run/node = SubResource("AnimationNodeAnimation_34wvs")
+states/run/position = Vector2(656, 102.444)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_toixo"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_gsmf1"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_rphtg")]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qf85b"]
+animation = &"anticipation"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_to1k6"]
+animation = &"attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rc41g"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yrbs5"]
+advance_mode = 2
+advance_expression = "_wants_to_attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_em08u"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ikh3n"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wq0e6"]
+advance_mode = 2
+advance_expression = "not wants_to_attack"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_gxxld"]
+states/Movement/node = SubResource("AnimationNodeStateMachine_i1fv4")
+states/Movement/position = Vector2(544.333, 98.8889)
+states/anticipation/node = SubResource("AnimationNodeAnimation_qf85b")
+states/anticipation/position = Vector2(455, 27.3333)
+states/attack/node = SubResource("AnimationNodeAnimation_to1k6")
+states/attack/position = Vector2(644.333, 26.8889)
+transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_rc41g"), "Movement", "anticipation", SubResource("AnimationNodeStateMachineTransition_yrbs5"), "anticipation", "attack", SubResource("AnimationNodeStateMachineTransition_em08u"), "attack", "Movement", SubResource("AnimationNodeStateMachineTransition_ikh3n"), "anticipation", "Movement", SubResource("AnimationNodeStateMachineTransition_wq0e6")]
+graph_offset = Vector2(-5, -36)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_182rg"]
+animation = &"dead_ground"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_bpc74"]
+animation = &"dead_hit"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lqpq6"]
+animation = &"hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tmxaf"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y16iy"]
+advance_mode = 2
+advance_expression = "_is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_d673e"]
+advance_mode = 2
+advance_expression = "not _is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dsp0h"]
+advance_mode = 2
+advance_expression = "_is_dead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lh8pl"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c18et"]
+switch_mode = 2
+advance_mode = 2
+advance_expression = "not _is_dead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fhyla"]
+advance_mode = 2
+advance_expression = "not _is_dead"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_y302j"]
+states/Attack/node = SubResource("AnimationNodeStateMachine_gxxld")
+states/Attack/position = Vector2(525.333, 112.667)
+states/dead_ground/node = SubResource("AnimationNodeAnimation_182rg")
+states/dead_ground/position = Vector2(648.333, 172.667)
+states/dead_hit/node = SubResource("AnimationNodeAnimation_bpc74")
+states/dead_hit/position = Vector2(397.667, 164.667)
+states/hit/node = SubResource("AnimationNodeAnimation_lqpq6")
+states/hit/position = Vector2(517.667, 23.3333)
+transitions = ["Start", "Attack", SubResource("AnimationNodeStateMachineTransition_tmxaf"), "Attack", "hit", SubResource("AnimationNodeStateMachineTransition_y16iy"), "hit", "Attack", SubResource("AnimationNodeStateMachineTransition_d673e"), "Attack", "dead_hit", SubResource("AnimationNodeStateMachineTransition_dsp0h"), "dead_hit", "dead_ground", SubResource("AnimationNodeStateMachineTransition_lh8pl"), "dead_ground", "Attack", SubResource("AnimationNodeStateMachineTransition_c18et"), "dead_hit", "Attack", SubResource("AnimationNodeStateMachineTransition_fhyla")]
+graph_offset = Vector2(-71, -30)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h45fk"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ly6l2"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4mywf"]
+radius = 14.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pdw3c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_40fl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_m3sih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_cqphb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_io0qy")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jreos"]
+radius = 19.0263
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a1us1"]
+radius = 100.0
+
+[node name="PinkStar" type="CharacterBody2D"]
 collision_layer = 65536
 collision_mask = 65793
-script = ExtResource("1_bjlyu")
+script = ExtResource("1_6pkon")
+_speed = 3
+_jump_dust = ExtResource("2_gplal")
+_sprite_face_left = true
+_invincible_duration = 1.0
+_is_attacking = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -14)
-texture = ExtResource("18_bb7so")
+texture = ExtResource("28_8h0hp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
 "": SubResource("AnimationLibrary_xsslb")
 }
-autoplay = "idle"
+
+[node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_xsslb")
+}
+tree_root = SubResource("AnimationNodeStateMachine_y302j")
+advance_expression_base_node = NodePath("../../..")
+anim_player = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -11)
-shape = SubResource("CircleShape2D_bmqxe")
+position = Vector2(-1, -11)
+shape = SubResource("CircleShape2D_h45fk")
 
 [node name="HurtBox" type="Area2D" parent="."]
+collision_layer = 131072
+collision_mask = 0
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(0, -11)
-shape = SubResource("CircleShape2D_3o223")
-debug_color = Color(0, 0.631373, 0.443137, 0.419608)
+position = Vector2(-1, -11)
+shape = SubResource("CircleShape2D_ly6l2")
+debug_color = Color(0, 0.635294, 0.423529, 0.419608)
+
+[node name="Invincible" type="Timer" parent="HurtBox"]
+one_shot = true
 
 [node name="HitBox" type="Area2D" parent="."]
+collision_layer = 262144
+collision_mask = 512
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, -12)
+rotation = 1.5708
+shape = SubResource("CircleShape2D_4mywf")
+debug_color = Color(0.980392, 0, 0.396078, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="HitBox"]
+position = Vector2(18, -6)
+sprite_frames = SubResource("SpriteFrames_pdw3c")
+
+[node name="Target" type="Area2D" parent="HitBox"]
+collision_layer = 1048576
+collision_mask = 512
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox/Target"]
+position = Vector2(0, -12)
+rotation = 1.5708
+shape = SubResource("CircleShape2D_jreos")
+debug_color = Color(0.654902, 0.517647, 0, 0.419608)
+
+[node name="Vision" type="Area2D" parent="."]
+collision_layer = 524288
+collision_mask = 256
+monitorable = false
+
+[node name="FieldOfVision" type="CollisionShape2D" parent="Vision"]
+position = Vector2(-56, -18)
+shape = SubResource("CircleShape2D_a1us1")
+debug_color = Color(0.529412, 0.537255, 0.541176, 0.419608)
+
+[node name="LineOfSight" type="RayCast2D" parent="Vision"]
+position = Vector2(0, -18)
+target_position = Vector2(-64, 0)
+collision_mask = 257
+
+[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="area_entered" from="HitBox/Target" to="." method="_on_target_area_entered"]
+[connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]
+[connection signal="body_exited" from="Vision" to="." method="_on_vision_body_exited"]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://cx88ay1f3bakm"]
+
+[ext_resource type="Script" path="res://Scripts/Character/Enemies/projectile.gd" id="1_iusqr"]
+[ext_resource type="Texture2D" uid="uid://bdwmydqreqnlx" path="res://Treasure Hunters/Shooter Traps/Sprites/Totems/Wood Spike/Idle/1.png" id="2_8k0ic"]
+[ext_resource type="Script" path="res://Scripts/Environment/debris.gd" id="3_qnwt7"]
+[ext_resource type="Texture2D" uid="uid://f03mwh3avsnc" path="res://Treasure Hunters/Shooter Traps/Sprites/Totems/Wood Spike/Destroyed/2.png" id="4_ws6m1"]
+[ext_resource type="Texture2D" uid="uid://c1w8ca06bsawy" path="res://Treasure Hunters/Shooter Traps/Sprites/Totems/Wood Spike/Destroyed/3.png" id="5_pami4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ke4t"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_na5vy"]
+radius = 3.0
+height = 6.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b2l7s"]
+radius = 3.0
+height = 6.0
+
+[node name="WoodSpike" type="Area2D"]
+collision_layer = 262144
+collision_mask = 513
+script = ExtResource("1_iusqr")
+_flip_with_direction = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8k0ic")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0ke4t")
+debug_color = Color(1, 0, 0.0862745, 0.419608)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Debris" type="Node2D" parent="."]
+script = ExtResource("3_qnwt7")
+
+[node name="Top" type="RigidBody2D" parent="Debris"]
+visible = false
+position = Vector2(-2, 0)
+collision_layer = 9
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Debris/Top"]
+texture = ExtResource("4_ws6m1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Debris/Top"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_na5vy")
+
+[node name="Buttom" type="RigidBody2D" parent="Debris"]
+visible = false
+position = Vector2(2, 0)
+collision_layer = 9
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Debris/Buttom"]
+texture = ExtResource("5_pami4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Debris/Buttom"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_b2l7s")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="timeout" from="Timer" to="." method="_break"]
