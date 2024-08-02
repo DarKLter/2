@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://jhowayidjlsl"
-path="res://.godot/imported/209174__lukesharples__nrr.wav-08f465082cef106df7f59be6527d49ea.sample"
+path="res://.godot/imported/209174__lukesharples__nrr.wav-41f021f62ad416ae5bd2b83003b30316.sample"
 
 [deps]
 
-source_file="res://Resources/Sounds/209174__lukesharples__nrr.wav"
-dest_files=["res://.godot/imported/209174__lukesharples__nrr.wav-08f465082cef106df7f59be6527d49ea.sample"]
+source_file="res://Sounds/209174__lukesharples__nrr.wav"
+dest_files=["res://.godot/imported/209174__lukesharples__nrr.wav-41f021f62ad416ae5bd2b83003b30316.sample"]
 
 [params]
 

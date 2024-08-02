@@ -10,12 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://83fvmqkr0eu" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/6.png" id="5_mugj6"]
 [ext_resource type="Texture2D" uid="uid://bhxq02n7g22j5" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/5.png" id="6_bfufr"]
 [ext_resource type="Texture2D" uid="uid://b2nefr0nib66u" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/4.png" id="7_iohv7"]
-[ext_resource type="AudioStream" uid="uid://g3g7dxsel8yu" path="res://Resources/Sounds/573649__the_frisbee_of_peace__wooden-chest-lid-latches-close_02.wav" id="8_4xg2v"]
-[ext_resource type="AudioStream" uid="uid://b67b8lmw2mjco" path="res://Resources/Sounds/573654__the_frisbee_of_peace__wooden-chest-open.wav" id="9_unu2e"]
+[ext_resource type="AudioStream" uid="uid://g3g7dxsel8yu" path="res://Sounds/573649__the_frisbee_of_peace__wooden-chest-lid-latches-close_02.wav" id="8_4xg2v"]
+[ext_resource type="AudioStream" uid="uid://b67b8lmw2mjco" path="res://Sounds/573654__the_frisbee_of_peace__wooden-chest-open.wav" id="9_unu2e"]
 [ext_resource type="Texture2D" uid="uid://darvie6kpk6w" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Idle/1.png" id="12_i84dj"]
 [ext_resource type="Texture2D" uid="uid://bw5n1gk3rth0a" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/2.png" id="13_ng1n2"]
 [ext_resource type="Texture2D" uid="uid://bb8v8u704a0br" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/1.png" id="14_njhhb"]
-[ext_resource type="AudioStream" uid="uid://ba5l41ydywl4e" path="res://Resources/Sounds/418846_key-twist-in-lock.wav" id="15_2bl77"]
+[ext_resource type="AudioStream" uid="uid://ba5l41ydywl4e" path="res://Sounds/418846_key-twist-in-lock.wav" id="15_2bl77"]
 
 [sub_resource type="Animation" id="Animation_jxd31"]
 resource_name = "closed"

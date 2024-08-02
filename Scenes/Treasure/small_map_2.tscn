@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://p14u4dri7a1" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/01.png" id="13_c6o11"]
 [ext_resource type="Texture2D" uid="uid://b2eysob3vp7uj" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/02.png" id="14_pnad5"]
 [ext_resource type="Texture2D" uid="uid://c3et7oo1acbye" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/03.png" id="15_s2egw"]
-[ext_resource type="AudioStream" uid="uid://bud2y72bfhn1n" path="res://Resources/Sounds/447932__breviceps__paper.wav" id="16_a67fg"]
+[ext_resource type="AudioStream" uid="uid://bud2y72bfhn1n" path="res://Sounds/447932__breviceps__paper.wav" id="16_a67fg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ytn7x"]
 animations = [{

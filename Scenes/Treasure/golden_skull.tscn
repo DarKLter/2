@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c4qg1qh7gil1o" path="res://Treasure Hunters/Pirate Treasure/Sprites/Skull Effect/03.png" id="11_ycnvg"]
 [ext_resource type="Texture2D" uid="uid://bouwwfkdcnx1x" path="res://Treasure Hunters/Pirate Treasure/Sprites/Skull Effect/04.png" id="12_twmgb"]
 [ext_resource type="Texture2D" uid="uid://dv82nvgvmxxtt" path="res://Treasure Hunters/Pirate Treasure/Sprites/Skull Effect/05.png" id="13_joinh"]
-[ext_resource type="AudioStream" uid="uid://gd84i38ae4q7" path="res://Resources/Sounds/341168_hud-open01.wav" id="14_yitsu"]
+[ext_resource type="AudioStream" uid="uid://gd84i38ae4q7" path="res://Sounds/341168_hud-open01.wav" id="14_yitsu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ytn7x"]
 animations = [{

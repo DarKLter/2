@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cymwbfc724lis" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest Key/Effect/2.png" id="11_2v1d6"]
 [ext_resource type="Texture2D" uid="uid://dos3fk4chn6m" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest Key/Effect/3.png" id="12_jciqy"]
 [ext_resource type="Texture2D" uid="uid://bv2c108tmmb6n" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest Key/Effect/4.png" id="13_8p05n"]
-[ext_resource type="AudioStream" uid="uid://i7iup4b2gvmk" path="res://Resources/Sounds/699530__valenspire__coin_misc_01.wav" id="14_fcmp3"]
+[ext_resource type="AudioStream" uid="uid://i7iup4b2gvmk" path="res://Sounds/699530__valenspire__coin_misc_01.wav" id="14_fcmp3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x8wpb"]
 animations = [{

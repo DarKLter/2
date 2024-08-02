@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://crkutxpfr6hdw"]
 
-[ext_resource type="Texture2D" uid="uid://b3whswnmev6bs" path="res://Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="1_wcv63"]
-[ext_resource type="Texture2D" uid="uid://cl3qk6c5t4rxj" path="res://Treasure Hunters/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Bottom and Grass (32x32).png" id="2_lo2qb"]
+[ext_resource type="Texture2D" uid="uid://b3whswnmev6bs" path="res://Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="1_foifp"]
+[ext_resource type="Texture2D" uid="uid://cl3qk6c5t4rxj" path="res://Treasure Hunters/Palm Tree Island/Sprites/Front Palm Trees/Front Palm Bottom and Grass (32x32).png" id="2_8ikxo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ea2os"]
-texture = ExtResource("1_wcv63")
+texture = ExtResource("1_foifp")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -478,7 +478,7 @@ texture_region_size = Vector2i(32, 32)
 16:4/0/terrains_peering_bit/top_side = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tic15"]
-texture = ExtResource("2_lo2qb")
+texture = ExtResource("2_8ikxo")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)

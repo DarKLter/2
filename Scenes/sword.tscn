@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://jgdsrx6b1ms6" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Sword/21-Sword Idle/Sword Idle 05.png" id="6_g2wad"]
 [ext_resource type="Texture2D" uid="uid://di7q12u558hd3" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Sword/21-Sword Idle/Sword Idle 06.png" id="7_8yugb"]
 [ext_resource type="Texture2D" uid="uid://d1qyowd8k6nws" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Sword/21-Sword Idle/Sword Idle 07.png" id="8_2hy4u"]
-[ext_resource type="AudioStream" uid="uid://bnrw833gonul4" path="res://Resources/Sounds/209102__lukesharples__unshealth.wav" id="9_fllvn"]
+[ext_resource type="AudioStream" uid="uid://bnrw833gonul4" path="res://Sounds/209102__lukesharples__unshealth.wav" id="9_fllvn"]
 
 [sub_resource type="Animation" id="Animation_pc7fa"]
 resource_name = "idle"
@@ -69,9 +69,6 @@ libraries = {
 
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
 root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_f7n3b")
-}
 tree_root = SubResource("AnimationNodeStateMachine_to7ty")
 advance_expression_base_node = NodePath("../../..")
 anim_player = NodePath("..")

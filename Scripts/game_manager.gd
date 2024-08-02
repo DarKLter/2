@@ -24,7 +24,7 @@ func _ready():
 	_player.set_enabled(true)
 
 func _load_level():
-	_level = load("res://Scenes/Levels/level_" + str(File.data.level) + "-" + str( File.data.level) + ".tscn").instantiate()
+	_level = load("res://Scenes/Levels/level_" + str(File.data.world) + "-" + str( File.data.level) + ".tscn").instantiate()
 	add_child(_level)
 	_init_boundaries()
 	_init_ui()
@@ -61,10 +61,13 @@ func _pause(should_be_pause : bool):
 
 func collect_map():
 	_player.set_enabled(false)
+	File.data.set_progress_marker(Data.Progress.COMPLETED)
+	File.data.set_progress_marker(Data.Progress.UNLOCKED, _level.world_unlocked, _level.level_unlocked)
 	_fanfare.stream = _victoty
 	_fanfare.play()
 	await _fanfare.finished
 	await _fade.fade_to_black()
+	get_tree().change_scene_to_file("res://Scenes/level_select.tscn")
 	#Load Level selection scene
 
 func collect_coin(value : int):
@@ -128,11 +131,9 @@ func _restart(game_over : bool = false):
 func _on_level_select_pressed():
 	_game_over_menu.visible = false
 	await _fade.fade_to_black()
-	File.data.retry()
-	print("Return to level selection menu.")
+	get_tree().change_scene_to_file("res://Scenes/level_select.tscn")
 
 func _on_exit_pressed():
 	_game_over_menu.visible = false
 	await _fade.fade_to_black()
-	get_tree().quit()
-	#or return to title screen
+	get_tree().change_scene_to_file("res://Scenes/title.tscn")

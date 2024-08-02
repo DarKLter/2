@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b0o4u4vpnfxnh" path="res://Treasure Hunters/Pirate Treasure/Sprites/Potion Effect/02.png" id="10_b4yep"]
 [ext_resource type="Texture2D" uid="uid://detdic2nsjbtk" path="res://Treasure Hunters/Pirate Treasure/Sprites/Potion Effect/03.png" id="11_c1ip3"]
 [ext_resource type="Texture2D" uid="uid://yanu7r8qd6wr" path="res://Treasure Hunters/Pirate Treasure/Sprites/Potion Effect/04.png" id="12_5o0n3"]
-[ext_resource type="AudioStream" uid="uid://dfcprc4xfuict" path="res://Resources/Sounds/712051__myliejoemoss1996__my-gulp-recording.wav" id="13_0o0qs"]
+[ext_resource type="AudioStream" uid="uid://dfcprc4xfuict" path="res://Sounds/712051__myliejoemoss1996__my-gulp-recording.wav" id="13_0o0qs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x8wpb"]
 animations = [{

@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dvmc2qaug7tme" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="8_frk4t"]
 [ext_resource type="Texture2D" uid="uid://c2x5gomu1ahio" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="9_lmu5o"]
 [ext_resource type="Texture2D" uid="uid://cm04y8tewfgqo" path="res://Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="10_rnxhl"]
-[ext_resource type="AudioStream" uid="uid://b5h2s5hhn6qnw" path="res://Resources/Sounds/656643__ienba__game-reward.wav" id="11_mosjy"]
+[ext_resource type="AudioStream" uid="uid://b5h2s5hhn6qnw" path="res://Sounds/656643__ienba__game-reward.wav" id="11_mosjy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5gjmi"]
 animations = [{

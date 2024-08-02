@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bo82shgl5jjnt"]
 
 [ext_resource type="Texture2D" uid="uid://4c7xmegku2tk" path="res://Treasure Hunters/Merchant Ship/Sprites/Chest/Padlock/1.png" id="2_74gkg"]
-[ext_resource type="AudioStream" uid="uid://i7iup4b2gvmk" path="res://Resources/Sounds/699530__valenspire__coin_misc_01.wav" id="14_ww5kt"]
+[ext_resource type="AudioStream" uid="uid://i7iup4b2gvmk" path="res://Sounds/699530__valenspire__coin_misc_01.wav" id="14_ww5kt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6rnhn"]
 size = Vector2(10, 8)

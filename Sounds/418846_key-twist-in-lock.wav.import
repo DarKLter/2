@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ba5l41ydywl4e"
-path="res://.godot/imported/418846_key-twist-in-lock.wav-96036323e4af27cd6b5a41e604073c7d.sample"
+path="res://.godot/imported/418846_key-twist-in-lock.wav-158e523f12f43404c71192e7d33f0517.sample"
 
 [deps]
 
-source_file="res://Resources/Sounds/418846_key-twist-in-lock.wav"
-dest_files=["res://.godot/imported/418846_key-twist-in-lock.wav-96036323e4af27cd6b5a41e604073c7d.sample"]
+source_file="res://Sounds/418846_key-twist-in-lock.wav"
+dest_files=["res://.godot/imported/418846_key-twist-in-lock.wav-158e523f12f43404c71192e7d33f0517.sample"]
 
 [params]
 

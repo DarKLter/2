@@ -490,6 +490,8 @@ debug_color = Color(0.980392, 0, 0.396078, 0.419608)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="HitBox"]
 position = Vector2(18, -6)
 sprite_frames = SubResource("SpriteFrames_pdw3c")
+frame = 4
+frame_progress = 1.0
 
 [node name="Target" type="Area2D" parent="HitBox"]
 collision_layer = 1048576

@@ -1,7 +1,6 @@
-[gd_scene load_steps=47 format=3 uid="uid://1hv1c011rdcd"]
+[gd_scene load_steps=46 format=3 uid="uid://1hv1c011rdcd"]
 
 [ext_resource type="Script" path="res://Scripts/Character/Enemies/shooter.gd" id="1_il64k"]
-[ext_resource type="PackedScene" uid="uid://yry0gs8v0o00" path="res://Scenes/Dust/jump_dust.tscn" id="2_iipuv"]
 [ext_resource type="PackedScene" uid="uid://djve6uixsrxtg" path="res://Scenes/Projectiles/pearl.tscn" id="17_gbtbj"]
 [ext_resource type="Script" path="res://Scripts/Environment/debris.gd" id="17_yu2mn"]
 [ext_resource type="Texture2D" uid="uid://dybri6ltgor02" path="res://Treasure Hunters/Shooter Traps/Sprites/Seashell/Seashell Hit/1.png" id="23_jblxg"]
@@ -246,18 +245,8 @@ height = 22.0
 
 [node name="Seashell" type="CharacterBody2D"]
 collision_layer = 65536
-platform_on_leave = 2
 script = ExtResource("1_il64k")
 _projectile = ExtResource("17_gbtbj")
-_speed = 0
-_acceleration = 0.0
-_deceleration = 0.0
-_jump_height = 0.0
-_jump_dust = ExtResource("2_iipuv")
-_is_facing_left = true
-_sprite_face_left = true
-_invincible_duration = 1.0
-_is_attacking = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -19)
@@ -270,9 +259,6 @@ libraries = {
 
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
 root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_xsslb")
-}
 tree_root = SubResource("AnimationNodeStateMachine_y302j")
 advance_expression_base_node = NodePath("../../..")
 anim_player = NodePath("..")

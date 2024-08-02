@@ -1,29 +1,29 @@
-[gd_scene load_steps=29 format=3 uid="uid://c4gfeyhatmrdg"]
+[gd_scene load_steps=29 format=3 uid="uid://pmp2y33bddq2"]
 
-[ext_resource type="Script" path="res://Scripts/Environment/level.gd" id="1_mroo3"]
-[ext_resource type="TileSet" uid="uid://crkutxpfr6hdw" path="res://tile_set.tres" id="2_sa7ik"]
-[ext_resource type="Script" path="res://Scripts/Environment/water.gd" id="3_y8n5e"]
-[ext_resource type="PackedScene" uid="uid://drcusaovrobya" path="res://Scenes/Dust/splash.tscn" id="4_d48lh"]
-[ext_resource type="Texture2D" uid="uid://biraee2rfo063" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="5_vgomx"]
-[ext_resource type="Texture2D" uid="uid://b42uknli4ftdj" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/1.png" id="6_a82o7"]
-[ext_resource type="Texture2D" uid="uid://ktf6gi655jah" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/2.png" id="7_3wb5f"]
-[ext_resource type="Texture2D" uid="uid://b8gsllp33vp4f" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/3.png" id="8_fmalr"]
-[ext_resource type="Texture2D" uid="uid://cmianp6txjwgk" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/4.png" id="9_w7bec"]
-[ext_resource type="AudioStream" uid="uid://clh4acjv8adhn" path="res://Sounds/406087_water_splash.wav" id="10_gcn8n"]
-[ext_resource type="PackedScene" uid="uid://cuxcddq3j0a2w" path="res://Scenes/Decoration/palm_tree.tscn" id="11_j2vn6"]
-[ext_resource type="PackedScene" uid="uid://ceq43mjhpkh7a" path="res://Scenes/Decoration/spikes.tscn" id="12_xp4rd"]
-[ext_resource type="PackedScene" uid="uid://c1rsp4atrjcd" path="res://Scenes/Character/fierce_tooth.tscn" id="16_bbqcx"]
-[ext_resource type="PackedScene" uid="uid://cy6hqf1tctkpl" path="res://Scenes/Character/patrol.tscn" id="17_4kbeo"]
-[ext_resource type="PackedScene" uid="uid://lb3165mj66es" path="res://Scenes/Character/pink_star.tscn" id="18_q5ivc"]
-[ext_resource type="PackedScene" uid="uid://bmb634vmpjmfl" path="res://Scenes/Character/crabby.tscn" id="19_vc0mc"]
-[ext_resource type="PackedScene" uid="uid://s7ypgrvk8lre" path="res://Scenes/Treasure/silver_coin.tscn" id="21_ll0jn"]
-[ext_resource type="PackedScene" uid="uid://byi1whjxl6qyj" path="res://Scenes/Treasure/gold_coin.tscn" id="22_uin81"]
-[ext_resource type="PackedScene" uid="uid://dr7pdwar7jh8g" path="res://Scenes/Treasure/golden_skull.tscn" id="23_m7wbw"]
-[ext_resource type="PackedScene" uid="uid://bqesfqn04fjth" path="res://Scenes/Treasure/chest.tscn" id="24_sfkr5"]
-[ext_resource type="PackedScene" uid="uid://blp2px5kgkvhj" path="res://Scenes/Treasure/key.tscn" id="25_s34mj"]
-[ext_resource type="PackedScene" uid="uid://02huqewp6q1a" path="res://Scenes/Treasure/small_map_1.tscn" id="25_tokmh"]
-[ext_resource type="PackedScene" uid="uid://bsv2t8aomjfok" path="res://Scenes/Treasure/red_potion.tscn" id="26_l3pat"]
-[ext_resource type="PackedScene" uid="uid://326u6l81sujb" path="res://Scenes/sword.tscn" id="27_3wlua"]
+[ext_resource type="Script" path="res://Scripts/Environment/level.gd" id="1_5vav3"]
+[ext_resource type="TileSet" uid="uid://crkutxpfr6hdw" path="res://tile_set.tres" id="2_6oylr"]
+[ext_resource type="Script" path="res://Scripts/Environment/water.gd" id="3_7wq6g"]
+[ext_resource type="PackedScene" uid="uid://drcusaovrobya" path="res://Scenes/Dust/splash.tscn" id="4_wrylw"]
+[ext_resource type="Texture2D" uid="uid://biraee2rfo063" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="5_6pw8a"]
+[ext_resource type="Texture2D" uid="uid://b42uknli4ftdj" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/1.png" id="6_ptk8l"]
+[ext_resource type="Texture2D" uid="uid://ktf6gi655jah" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/2.png" id="7_7ieec"]
+[ext_resource type="Texture2D" uid="uid://b8gsllp33vp4f" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/3.png" id="8_i866y"]
+[ext_resource type="Texture2D" uid="uid://cmianp6txjwgk" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/4.png" id="9_gy2jj"]
+[ext_resource type="AudioStream" uid="uid://clh4acjv8adhn" path="res://Sounds/406087_water_splash.wav" id="10_vlafb"]
+[ext_resource type="PackedScene" uid="uid://cuxcddq3j0a2w" path="res://Scenes/Decoration/palm_tree.tscn" id="11_8bpbb"]
+[ext_resource type="PackedScene" uid="uid://ceq43mjhpkh7a" path="res://Scenes/Decoration/spikes.tscn" id="12_001a5"]
+[ext_resource type="PackedScene" uid="uid://c1rsp4atrjcd" path="res://Scenes/Character/fierce_tooth.tscn" id="16_0nfml"]
+[ext_resource type="PackedScene" uid="uid://cy6hqf1tctkpl" path="res://Scenes/Character/patrol.tscn" id="17_mridd"]
+[ext_resource type="PackedScene" uid="uid://lb3165mj66es" path="res://Scenes/Character/pink_star.tscn" id="18_xsncm"]
+[ext_resource type="PackedScene" uid="uid://bmb634vmpjmfl" path="res://Scenes/Character/crabby.tscn" id="19_ui4uf"]
+[ext_resource type="PackedScene" uid="uid://s7ypgrvk8lre" path="res://Scenes/Treasure/silver_coin.tscn" id="21_gm07p"]
+[ext_resource type="PackedScene" uid="uid://byi1whjxl6qyj" path="res://Scenes/Treasure/gold_coin.tscn" id="22_qwwxb"]
+[ext_resource type="PackedScene" uid="uid://dr7pdwar7jh8g" path="res://Scenes/Treasure/golden_skull.tscn" id="23_423eu"]
+[ext_resource type="PackedScene" uid="uid://ov4qck5i3h5d" path="res://Scenes/Treasure/small_map_2.tscn" id="24_bdovu"]
+[ext_resource type="PackedScene" uid="uid://bqesfqn04fjth" path="res://Scenes/Treasure/chest.tscn" id="24_swkfq"]
+[ext_resource type="PackedScene" uid="uid://blp2px5kgkvhj" path="res://Scenes/Treasure/key.tscn" id="25_41f0o"]
+[ext_resource type="PackedScene" uid="uid://bsv2t8aomjfok" path="res://Scenes/Treasure/red_potion.tscn" id="26_441ar"]
+[ext_resource type="PackedScene" uid="uid://326u6l81sujb" path="res://Scenes/sword.tscn" id="27_6vbhl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7b8n"]
 size = Vector2(2608, 616)
@@ -32,16 +32,16 @@ size = Vector2(2608, 616)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_a82o7")
+"texture": ExtResource("6_ptk8l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_3wb5f")
+"texture": ExtResource("7_7ieec")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_fmalr")
+"texture": ExtResource("8_i866y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_w7bec")
+"texture": ExtResource("9_gy2jj")
 }],
 "loop": true,
 "name": &"default",
@@ -57,8 +57,8 @@ b = Vector2(128, 0)
 
 [node name="Level" type="Area2D"]
 process_mode = 1
-script = ExtResource("1_mroo3")
-level_unlocked = 2
+script = ExtResource("1_5vav3")
+level_unlocked = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(536, -236)
@@ -67,7 +67,7 @@ debug_color = Color(0.87451, 0.964706, 0.960784, 0)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(72, -32)
-tile_set = ExtResource("2_sa7ik")
+tile_set = ExtResource("2_6oylr")
 format = 2
 layer_0/name = "Terains"
 layer_0/tile_data = PackedInt32Array(196603, 2, 2, 196604, 65538, 2, 196605, 65538, 2, 196606, 65538, 2, 196607, 65538, 2, 131072, 65538, 2, 131073, 65538, 2, 131074, 65538, 2, 131075, 65538, 2, 65538, 65538, 0, 65540, 65538, 0, 65539, 65538, 0, 65537, 65538, 0, 65553, 131074, 1, 131089, 131074, 2, 131088, 65538, 2, 131087, 65538, 2, 131086, 65538, 2, 131085, 65538, 2, 131084, 65538, 2, 131079, 65538, 2, 131078, 65538, 2, 131077, 65538, 2, 131076, 65538, 2, 65552, 65538, 1, 65551, 65538, 1, 65550, 65538, 1, 65549, 65538, 1, 65543, 65538, 0, 65542, 65538, 0, 65541, 65538, 0, 65558, 2, 0, 131094, 2, 2, 131095, 65538, 2, 131096, 65538, 2, 131097, 65538, 2, 65561, 65538, 0, 65559, 65538, 0, 65560, 65538, 0, 65536, 65538, 0, 131071, 65538, 0, 131070, 65538, 0, 131069, 65538, 0, 131068, 65538, 0, 131067, 2, 0, 65548, 65538, 1, 65531, 65539, 2, 65532, 131075, 2, 65533, 65539, 2, 65534, 131075, 2, 65535, 65539, 2, 0, 131075, 2, 1, 131075, 2, -786384, 65539, 2, -786383, 131075, 2, -786385, 131075, 2, -786389, 65539, 2, -786390, 131075, 2, -786432, 65538, 0, -720897, 2, 0, 12, 458754, 1, -65524, 2, 1, -131060, 2, 0, -131059, 458754, 1, -131058, 65538, 1, -131057, 65538, 1, -196593, 65538, 0, -196592, 65538, 0, -196591, 131074, 0, -131055, 131074, 1, -65519, 131074, 1, 17, 131074, 1, 16, 65538, 1, 15, 65538, 1, 14, 65538, 1, 13, 65538, 1, -65523, 65538, 1, -65522, 65538, 1, -131056, 65538, 1, -65520, 65538, 1, -65521, 65538, 1, -196594, 65538, 0, -196595, 2, 0, 65547, 65538, 1, 65546, 65538, 1, 65545, 65538, 1, 65544, 65538, 0, 131080, 65538, 2, 131081, 65538, 2, 131082, 65538, 2, 131083, 65538, 2, 11, 65538, 0, 10, 65538, 0, 9, 2, 0, 65562, 458754, 1, 65563, 393218, 1, 65564, 65538, 0, 65565, 65538, 0, 65566, 65538, 0, 65567, 65538, 0, 65568, 65538, 0, 65569, 65538, 0, 131106, 65538, 2, 131107, 65538, 2, 131108, 65538, 2, 131109, 65538, 2, 131110, 65538, 2, 131111, 65538, 2, 131112, 65538, 2, 131113, 65538, 2, 131114, 65538, 2, 131115, 65538, 2, 131116, 65538, 2, 131105, 65538, 2, 131104, 65538, 2, 131103, 65538, 2, 131102, 65538, 2, 131101, 65538, 2, 131100, 65538, 2, 131099, 65538, 2, 131098, 65538, 2, 65570, 458754, 1, 65571, 393218, 1, 65581, 65538, 0, 65578, 65538, 0, 65577, 65538, 0, 65576, 65538, 0, 65575, 65538, 0, 65574, 65538, 0, 65573, 65538, 0, 65572, 65538, 0, 131117, 65538, 2, 65582, 65538, 0, 65583, 65538, 0, 65585, 65538, 0, 65584, 65538, 0, 65587, 65538, 0, 65586, 65538, 0, 65588, 65538, 0, 65589, 65538, 0, 65590, 65538, 0, 131126, 65538, 2, 131123, 65538, 2, 131122, 65538, 2, 131121, 65538, 2, 131120, 65538, 2, 131119, 65538, 2, 131118, 65538, 2, 131124, 65538, 2, 131125, 65538, 2, 65580, 65538, 0, 65579, 65538, 0, 131127, 65538, 2, 65591, 458754, 1, 55, 2, 1, -65481, 2, 1, -131017, 2, 1, -196553, 2, 1, -262089, 2, 1, -327625, 2, 1, -393161, 2, 1, -458697, 2, 1, -589769, 2, 1, -524233, 2, 1, -589768, 131074, 1, -655304, 131074, 1, -720840, 131074, 1, -786376, 131074, 1, -851912, 131074, 1, -917448, 131074, 1, -982984, 131074, 1, -1048520, 131074, 1, -1114056, 131074, 1, -1179592, 131074, 1, -1245128, 131074, 1, -1310664, 131074, 0, -1310665, 2, 0, -1245129, 2, 1, -1179593, 2, 1, -1114057, 2, 1, -1048521, 2, 1, -982985, 2, 1, -917449, 2, 1, -851913, 2, 1, -786377, 2, 1, -720841, 2, 1, -655305, 2, 1, 131128, 131074, 2, 65592, 131074, 1, 56, 131074, 1, -65480, 131074, 1, -131016, 131074, 1, -196552, 131074, 1, -262088, 131074, 1, -327624, 131074, 1, -393160, 131074, 1, -458696, 131074, 1, -524232, 131074, 1, 262117, 262146, 2, 196581, 262146, 1, 131045, 262146, 1, 65509, 262146, 1, -27, 262146, 1, -65563, 262146, 1, -131099, 262146, 1, -196635, 262146, 1, -262171, 262146, 1, -327707, 262146, 1, -393243, 262146, 1, -458779, 262146, 1, -1245211, 262146, 0, -1179675, 262146, 1, -1114139, 262146, 1, -1048603, 262146, 1, -983067, 262146, 1, -917531, 262146, 1, -851995, 262146, 1, -786459, 262146, 1, -720923, 262146, 1, -655387, 262146, 1, -524315, 262146, 1, -589796, 2, 0, -589795, 65538, 0, -589794, 65538, 0, -589793, 131074, 0, -655338, 2, 0, -655337, 131074, 0, 27, 131074, 0, 26, 2, 0, 35, 458754, 4, -65501, 262146, 1, -131037, 983042, 3, 34, 2, 0, -131036, 65538, 4, -131035, 65538, 4, -131034, 1048578, 3, -65498, 262146, 2, -262104, 983042, 4, -262103, 65538, 4, -262102, 65538, 4, -262101, 65538, 4, -589851, 262146, 1, -262100, 65538, 4, -196563, 262146, 2, -262099, 1048578, 3, -327641, 2, 2, -327640, 458754, 3, -393177, 2, 0, -524260, 2, 1, -458724, 2, 1, -393188, 2, 2, -393187, 65538, 2, -393186, 65538, 2, -393185, 65538, 2, -393184, 65538, 2, -393183, 131074, 2, -589802, 2, 2, -655361, 2, 1, -524289, 2, 2, -589824, 65538, 2, -589823, 65538, 2, -589822, 65538, 2, -589821, 65538, 2, -589820, 131074, 2, -655356, 131074, 1, -720893, 65538, 0, -655357, 65538, 1, -655360, 65538, 1, -655359, 65538, 1, -655358, 65538, 1, -589825, 2, 1, -720892, 131074, 0, -786431, 65538, 0, -786430, 131074, 0, -720895, 65538, 1, -720896, 65538, 1, -720894, 393218, 1, -458719, 131074, 1, -524256, 65538, 0, -524257, 393218, 1, -458720, 65538, 1, -458721, 65538, 1, -458722, 65538, 1, -458723, 65538, 1, -524259, 65538, 1, -524258, 65538, 1, -589801, 131074, 2, -720878, 262146, 4, -786423, 262146, 4, -851954, 262146, 4, -524255, 131074, 0, -393176, 131074, 0)
@@ -80,13 +80,13 @@ z_index = 10
 position = Vector2(-280, 16)
 collision_layer = 2
 collision_mask = 257
-script = ExtResource("3_y8n5e")
-_splash = ExtResource("4_d48lh")
+script = ExtResource("3_7wq6g")
+_splash = ExtResource("4_wrylw")
 
 [node name="Buttom" type="Sprite2D" parent="Water"]
 position = Vector2(816, 40)
 scale = Vector2(29, 1)
-texture = ExtResource("5_vgomx")
+texture = ExtResource("5_6pw8a")
 
 [node name="Surface" type="Node2D" parent="Water"]
 
@@ -271,89 +271,89 @@ position = Vector2(928, 0)
 shape = SubResource("SegmentShape2D_8v1cp")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Water"]
-stream = ExtResource("10_gcn8n")
+stream = ExtResource("10_vlafb")
 
 [node name="Decorations" type="Node2D" parent="."]
 position = Vector2(72, -32)
 
-[node name="PalmTree" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(-128, -32)
 
-[node name="PalmTree2" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree2" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(576, -32)
 
-[node name="PalmTree3" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree3" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(1024, -32)
 
-[node name="PalmTree4" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree4" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(1568, -32)
 
-[node name="PalmTree5" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree5" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(1472, -96)
 
-[node name="PalmTree6" parent="Decorations" instance=ExtResource("11_j2vn6")]
+[node name="PalmTree6" parent="Decorations" instance=ExtResource("11_8bpbb")]
 position = Vector2(1248, -256)
 
-[node name="Spikes" parent="Decorations" instance=ExtResource("12_xp4rd")]
+[node name="Spikes" parent="Decorations" instance=ExtResource("12_001a5")]
 position = Vector2(240, 16)
 
 [node name="Enemies" type="Node2D" parent="."]
 position = Vector2(72, -32)
 
-[node name="Fierce Tooth" parent="Enemies" instance=ExtResource("16_bbqcx")]
+[node name="Fierce Tooth" parent="Enemies" instance=ExtResource("16_0nfml")]
 position = Vector2(992, 24)
 _is_attacking = false
 
 [node name="Timer" type="Timer" parent="Enemies/Fierce Tooth"]
 wait_time = 2.0
 
-[node name="Patrol" parent="Enemies/Fierce Tooth" instance=ExtResource("17_4kbeo")]
+[node name="Patrol" parent="Enemies/Fierce Tooth" instance=ExtResource("17_mridd")]
 
-[node name="PinkStar" parent="Enemies" instance=ExtResource("18_q5ivc")]
+[node name="PinkStar" parent="Enemies" instance=ExtResource("18_xsncm")]
 position = Vector2(1400, -152)
 
 [node name="Timer" type="Timer" parent="Enemies/PinkStar"]
 wait_time = 2.0
 
-[node name="Patrol" parent="Enemies/PinkStar" instance=ExtResource("17_4kbeo")]
+[node name="Patrol" parent="Enemies/PinkStar" instance=ExtResource("17_mridd")]
 _ledge_behaviour = 0
 
-[node name="Crabby" parent="Enemies" instance=ExtResource("19_vc0mc")]
+[node name="Crabby" parent="Enemies" instance=ExtResource("19_ui4uf")]
 position = Vector2(1472, 24)
 
 [node name="Timer" type="Timer" parent="Enemies/Crabby"]
 wait_time = 2.0
 
-[node name="Patrol" parent="Enemies/Crabby" instance=ExtResource("17_4kbeo")]
+[node name="Patrol" parent="Enemies/Crabby" instance=ExtResource("17_mridd")]
 _ledge_behaviour = 0
 
 [node name="Treasures" type="Node2D" parent="."]
 position = Vector2(24, -48)
 
-[node name="SilverCoin" parent="Treasures" instance=ExtResource("21_ll0jn")]
+[node name="SilverCoin" parent="Treasures" instance=ExtResource("21_gm07p")]
 position = Vector2(377, -9)
 
-[node name="GoldCoin" parent="Treasures" instance=ExtResource("22_uin81")]
+[node name="GoldCoin" parent="Treasures" instance=ExtResource("22_qwwxb")]
 position = Vector2(496, -120)
 
-[node name="GoldenSkull" parent="Treasures" instance=ExtResource("23_m7wbw")]
+[node name="GoldenSkull" parent="Treasures" instance=ExtResource("23_423eu")]
 position = Vector2(-66, -71)
 
-[node name="Chest" parent="Treasures" instance=ExtResource("24_sfkr5")]
+[node name="Chest" parent="Treasures" instance=ExtResource("24_swkfq")]
 position = Vector2(576, -80)
 _is_locked = true
 
-[node name="Key" parent="Treasures" instance=ExtResource("25_s34mj")]
+[node name="Key" parent="Treasures" instance=ExtResource("25_41f0o")]
 position = Vector2(448, -64)
 
-[node name="RedPotion" parent="Treasures" instance=ExtResource("26_l3pat")]
+[node name="RedPotion" parent="Treasures" instance=ExtResource("26_441ar")]
 position = Vector2(448, -128)
 
-[node name="Sword" parent="Treasures" instance=ExtResource("27_3wlua")]
+[node name="Sword" parent="Treasures" instance=ExtResource("27_6vbhl")]
 position = Vector2(377, -46)
 
-[node name="SmallMap1" parent="Treasures" instance=ExtResource("25_tokmh")]
-position = Vector2(48, -392)
+[node name="SmallMap2" parent="Treasures" instance=ExtResource("24_bdovu")]
+position = Vector2(56, -384)
 
 [node name="Checkpoints" type="Node2D" parent="."]
 visible = false

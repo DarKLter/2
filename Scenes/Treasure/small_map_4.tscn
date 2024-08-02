@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://d3jrk7eo4dirt" path="res://Treasure Hunters/Pirate Treasure/Sprites/Big Map/Unfolding/02.png" id="14_kgmiw"]
 [ext_resource type="Texture2D" uid="uid://c3et7oo1acbye" path="res://Treasure Hunters/Pirate Treasure/Sprites/Map Effect/Out/03.png" id="15_acjy0"]
 [ext_resource type="Texture2D" uid="uid://cr40644sc44j6" path="res://Treasure Hunters/Pirate Treasure/Sprites/Big Map/Unfolding/03.png" id="15_n33rv"]
-[ext_resource type="AudioStream" uid="uid://bud2y72bfhn1n" path="res://Resources/Sounds/447932__breviceps__paper.wav" id="16_gcmr8"]
+[ext_resource type="AudioStream" uid="uid://bud2y72bfhn1n" path="res://Sounds/447932__breviceps__paper.wav" id="16_gcmr8"]
 [ext_resource type="Texture2D" uid="uid://nbykwk4gs0gj" path="res://Treasure Hunters/Pirate Treasure/Sprites/Big Map/Unfolding/04.png" id="16_jwrdx"]
 [ext_resource type="Texture2D" uid="uid://c7gxe5jpo22nt" path="res://Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/01.png" id="17_hvmx3"]
 [ext_resource type="Texture2D" uid="uid://cao08mulpxtqd" path="res://Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/02.png" id="18_8bj7m"]
