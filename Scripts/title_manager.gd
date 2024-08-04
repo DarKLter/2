@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var _music : AudioStream
 @onready var _fade : ColorRect = $CanvasLayer/Fade
 @onready var _continue : Button = $CanvasLayer/Buttons/Continue
 @onready var _confirmation : Control = $CanvasLayer/Confirmation
@@ -9,6 +10,7 @@ func _ready():
 	get_tree().paused = false
 	if File.save_file_exits():
 		_continue.disabled = false
+	Music.start_track(_music)
 	_fade.fade_to_clear()
 
 func _change_scene(path : String):
@@ -37,5 +39,6 @@ func _on_no_pressed():
 	_confirmation.visible = false
 
 func _on_exit_pressed():
+	Music.stop_track()
 	await _fade.fade_to_black()
 	get_tree().quit()

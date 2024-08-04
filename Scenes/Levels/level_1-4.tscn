@@ -1,8 +1,9 @@
-[gd_scene load_steps=41 format=3 uid="uid://d13mnh7n0tety"]
+[gd_scene load_steps=43 format=3 uid="uid://d13mnh7n0tety"]
 
 [ext_resource type="TileSet" uid="uid://crkutxpfr6hdw" path="res://tile_set.tres" id="1_plp8u"]
 [ext_resource type="Script" path="res://Scripts/Environment/level.gd" id="1_vnyf3"]
 [ext_resource type="Script" path="res://Scripts/Environment/water.gd" id="2_kjnme"]
+[ext_resource type="AudioStream" uid="uid://jogubbmr720b" path="res://Sounds/320978__littlerobotsoundfactory__loop_the_seven_seas_00.wav" id="2_wiql4"]
 [ext_resource type="PackedScene" uid="uid://drcusaovrobya" path="res://Scenes/Dust/splash.tscn" id="3_n3vis"]
 [ext_resource type="Texture2D" uid="uid://biraee2rfo063" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="4_yl47r"]
 [ext_resource type="Texture2D" uid="uid://b42uknli4ftdj" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/1.png" id="5_l13ae"]
@@ -35,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://2eee7bunhivl" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Life Bars/Big Bars/3.png" id="30_m3n1a"]
 [ext_resource type="Texture2D" uid="uid://c75ar3b3plifr" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Life Bars/Big Bars/4.png" id="31_a1erb"]
 [ext_resource type="Texture2D" uid="uid://clql53uvfdhv8" path="res://Treasure Hunters/Wood and Paper UI/Sprites/Life Bars/Colors/1.png" id="32_jf48u"]
+[ext_resource type="AudioStream" uid="uid://ciihgtk74qpx3" path="res://Sounds/321030__littlerobotsoundfactory__loop_jungle_war_drums_00.wav" id="32_oeycm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g7b8n"]
 size = Vector2(2608, 616)
@@ -72,6 +74,7 @@ size = Vector2(800, 225)
 [node name="Level" type="Area2D"]
 process_mode = 1
 script = ExtResource("1_vnyf3")
+music = ExtResource("2_wiql4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(536, -236)
@@ -402,6 +405,7 @@ collision_layer = 0
 collision_mask = 256
 monitorable = false
 script = ExtResource("27_1xxra")
+_boss_music = ExtResource("32_oeycm")
 _bosses = [NodePath("../TolemPole/TotemBlue"), NodePath("../TolemPole/TotemGreen"), NodePath("../TolemPole/TotemRed")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BossEncounter"]

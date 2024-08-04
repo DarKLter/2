@@ -247,10 +247,12 @@ height = 22.0
 collision_layer = 65536
 script = ExtResource("1_il64k")
 _projectile = ExtResource("17_gbtbj")
+_is_facing_left = true
+_sprite_face_left = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -19)
-texture = ExtResource("27_hqrj7")
+texture = ExtResource("34_gkrho")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {

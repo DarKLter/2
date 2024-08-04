@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var _music : AudioStream
 @onready var _fade : ColorRect = $CanvasLayer/Fade
 @onready var _level_buttons : Array[Node] = $CanvasLayer/PanelContainer/VBoxContainer/GridContainer.get_children()
 
@@ -12,6 +13,7 @@ func _ready():
 			button += 1
 	get_tree().paused = false
 	File.save_game()
+	Music.start_track(_music)
 	_fade.fade_to_clear()
 	
 func _on_level_selected(world : int, level : int):

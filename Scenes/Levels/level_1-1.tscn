@@ -1,7 +1,8 @@
-[gd_scene load_steps=29 format=3 uid="uid://c4gfeyhatmrdg"]
+[gd_scene load_steps=30 format=3 uid="uid://c4gfeyhatmrdg"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/level.gd" id="1_mroo3"]
 [ext_resource type="TileSet" uid="uid://crkutxpfr6hdw" path="res://tile_set.tres" id="2_sa7ik"]
+[ext_resource type="AudioStream" uid="uid://jogubbmr720b" path="res://Sounds/320978__littlerobotsoundfactory__loop_the_seven_seas_00.wav" id="2_yqqog"]
 [ext_resource type="Script" path="res://Scripts/Environment/water.gd" id="3_y8n5e"]
 [ext_resource type="PackedScene" uid="uid://drcusaovrobya" path="res://Scenes/Dust/splash.tscn" id="4_d48lh"]
 [ext_resource type="Texture2D" uid="uid://biraee2rfo063" path="res://Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="5_vgomx"]
@@ -58,6 +59,7 @@ b = Vector2(128, 0)
 [node name="Level" type="Area2D"]
 process_mode = 1
 script = ExtResource("1_mroo3")
+music = ExtResource("2_yqqog")
 level_unlocked = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

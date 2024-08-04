@@ -29,6 +29,7 @@ func _load_level():
 	_init_boundaries()
 	_init_ui()
 	_pause(false)
+	Music.start_track(_level.music)
 
 func _init_boundaries():
 	#get the level boundaries from the level 

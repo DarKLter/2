@@ -1,8 +1,9 @@
-[gd_scene load_steps=68 format=3 uid="uid://c2jd5rhoqtvl1"]
+[gd_scene load_steps=69 format=3 uid="uid://c2jd5rhoqtvl1"]
 
 [ext_resource type="Script" path="res://Scripts/level_select_manager.gd" id="1_f23g8"]
 [ext_resource type="PackedScene" uid="uid://drl6angbfa6kt" path="res://Scenes/Decoration/background.tscn" id="1_flyfe"]
 [ext_resource type="Texture2D" uid="uid://8msv5bpkaduh" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="2_dtn6e"]
+[ext_resource type="AudioStream" uid="uid://ec3gfjwugnnh" path="res://Sounds/321018__littlerobotsoundfactory__loop_pirates_ahoy_00.wav" id="2_se3we"]
 [ext_resource type="Texture2D" uid="uid://budy1muv1fe2j" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="3_mu7kn"]
 [ext_resource type="Texture2D" uid="uid://fddlrvimlemx" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="4_drc03"]
 [ext_resource type="Texture2D" uid="uid://cggmunqpljjos" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_ok8l1"]
@@ -1907,6 +1908,7 @@ frame_7/duration = 1.0
 position = Vector2(576, 320)
 scale = Vector2(3, 3)
 script = ExtResource("1_f23g8")
+_music = ExtResource("2_se3we")
 
 [node name="Background" parent="." instance=ExtResource("1_flyfe")]
 

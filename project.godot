@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 
 Global="*res://Scripts/Autoload/global.gd"
 File="*res://Scripts/Autoload/file.gd"
+Music="*res://Scripts/Autoload/music.gd"
 
 [display]
 

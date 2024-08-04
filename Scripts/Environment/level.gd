@@ -1,5 +1,6 @@
 extends Area2D
 
+@export var music : AudioStream
 @export var world_unlocked : int = 1
 @export var level_unlocked : int = 1
 @onready var _area : CollisionShape2D = $CollisionShape2D
